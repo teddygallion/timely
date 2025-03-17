@@ -3,7 +3,7 @@ import { useTimer } from "./hooks/useTimer";
 import TimerDisplay from "./components/TimerDisplay";
 import Controls from "./components/Controls";
 import Settings from "./components/Settings";
-import TodoList from "./components/TodoList";  // Import TodoList component
+import TodoList from "./components/TodoList"; 
 import "./styles/App.css";
 import Tomato from "./assets/tomato.svg";
 
@@ -12,10 +12,10 @@ const App = () => {
 
   return (
     <div className="app">
-      {/* Left Side: Todo List */}
+    <h1> Time.ly </h1>
       <TodoList />  
       
-      {/* Center: Timer, Controls, Settings */}
+    
       <div className="timer-container">
         <TimerDisplay timeLeft={timeLeft} isBreak={isBreak} />
         <Controls startStop={startStop} reset={reset} isRunning={isRunning} />

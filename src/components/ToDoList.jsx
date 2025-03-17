@@ -4,27 +4,27 @@ const TodoList = () => {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
 
-  // Load tasks from localStorage on initial render
+ 
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
     setTasks(savedTasks);
   }, []);
 
-  // Update localStorage whenever tasks change
+
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
-  // Handle adding a new task
+
   const handleAddTask = () => {
     if (newTask.trim() !== "") {
       const newTaskObject = { id: Date.now(), text: newTask, completed: false };
       setTasks([...tasks, newTaskObject]);
-      setNewTask(""); // Reset input field
+      setNewTask(""); 
     }
   };
 
-  // Handle task completion toggle
+
   const handleCompleteTask = (id) => {
     const updatedTasks = tasks.map((task) =>
       task.id === id ? { ...task, completed: !task.completed } : task
@@ -32,7 +32,7 @@ const TodoList = () => {
     setTasks(updatedTasks);
   };
 
-  // Handle task removal
+
   const handleRemoveTask = (id) => {
     const updatedTasks = tasks.filter((task) => task.id !== id);
     setTasks(updatedTasks);

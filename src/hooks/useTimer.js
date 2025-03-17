@@ -15,7 +15,7 @@ export const useTimer = (initialWorkTime = 25, initialBreakTime = 5) => {
       }, 1000);
     } else if (timeLeft === 0) {
       setIsBreak(!isBreak);
-      setTimeLeft(isBreak ? workTime : breakTime); // Switch between work/break
+      setTimeLeft(isBreak ? workTime : breakTime); 
     }
     return () => clearInterval(timer);
   }, [isRunning, timeLeft, isBreak, workTime, breakTime]);

@@ -6,7 +6,7 @@ const Settings = ({ setWorkTime, setBreakTime }) => {
   const [breakInput, setBreakInput] = useState(5);
 
   const handleApplySettings = () => {
-    setWorkTime(workInput * 60);  // Convert minutes to seconds
+    setWorkTime(workInput * 60); 
     setBreakTime(breakInput * 60);
   };
 

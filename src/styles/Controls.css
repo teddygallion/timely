@@ -23,12 +23,12 @@ button:active {
   transform: scale(0.95);
 }
 
-button:nth-child(1) { /* Start/Pause button */
+button:nth-child(1) {
   background-color: #4CAF50;
   color: white;
 }
 
-button:nth-child(2) { /* Reset button */
+button:nth-child(2) { 
   background-color: #FF3B30;
   color: white;
 }

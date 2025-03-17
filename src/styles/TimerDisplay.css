@@ -33,9 +33,9 @@ h2 {
 }
 
 .break h1 {
-  color: #8BC34A;  /* Green for break time */
+  color: #8BC34A;
 }
 
 .work-session h1 {
-  color: #F44336;  /* Red for work session */
+  color: #F44336;  
 }
