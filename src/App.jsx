@@ -3,7 +3,7 @@ import { useTimer } from "./hooks/useTimer";
 import TimerDisplay from "./components/TimerDisplay";
 import Controls from "./components/Controls";
 import Settings from "./components/Settings";
-import TodoList from "./components/TodoList"; 
+import TodoList from "./components/ToDoList"; 
 import "./styles/App.css";
 import Tomato from "./assets/tomato.svg";
 
